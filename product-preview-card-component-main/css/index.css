@@ -50,11 +50,7 @@
 
 @media (max-width: 767px) {
   #header {
-    flex-basis: 220px;
-  }
-
-  #header img {
-    /* height: 250px; */
+    flex-basis: 250px;
   }
 }
 
