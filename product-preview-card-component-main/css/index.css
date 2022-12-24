@@ -1,10 +1,10 @@
 /* .wrap */
 .wrap {
-  max-width: 1440px;
+  max-width: 102.857rem;
   width: 100%;
-  min-height: 800px;
+  min-height: 57.143rem;
   height: 100%;
-  padding: 32px 16px;
+  padding: 2.286rem 1.143rem;
   margin: 0 auto;
 
   display: flex;
@@ -12,17 +12,17 @@
   align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938em) {
   .wrap {
     height: initial;
-    min-width: 375px;
+    min-width: 26.786rem;
     min-height: 100vh;
   }
 }
 
 .container {
   flex: 1 1 0;
-  max-width: 700px;
+  max-width: 50rem;
   height: 100%;
 
   display: flex;
@@ -30,7 +30,7 @@
   align-items: stretch;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938em) {
   .container {
     flex-direction: column;
   }
@@ -48,9 +48,9 @@
   object-fit: cover;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938em) {
   #header {
-    flex-basis: 250px;
+    flex-basis: 17.857rem;
   }
 }
 
@@ -58,7 +58,7 @@
   flex: 1 1 50%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938em) {
   #main {
     flex-basis: 0;
   }
@@ -67,16 +67,16 @@
 /* product */
 #product {
   height: 100%;
-  padding: 32px;
+  padding: 2.286rem;
 
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2.286rem;
 }
 
 #product h2 {
   color: var(--very-dark-blue);
-  font-size: 36px;
+  font-size: 2.286rem;
   font-weight: 700;
 }
 
@@ -88,41 +88,40 @@
 
 #product .product__description {
   color: var(--dark-grayish-blue);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   line-height: 150%;
 }
 
 #product .product__price {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1.143rem;
 }
 
 #product .product__price-cost {
   color: var(--dark-grayish-blue);
   text-decoration: line-through;
-  font-size: 14px;
 }
 
 #product .product__price-sale {
   color: var(--dark-cyan);
-  font-size: 36px;
+  font-size: 2.571rem;
   font-weight: 700;
 }
 
 #product .button {
   color: var(--white);
   font-weight: 700;
-  font-size: 16px;
-  min-height: 48px;
-  border-radius: 10px;
+  font-size: 1.143rem;
+  min-height: 3.429rem;
+  border-radius: 0.714rem;
   background-color: var(--dark-cyan);
   text-align: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.571rem;
 }
 
 #product .button:hover {
@@ -130,13 +129,13 @@
 }
 
 #product .button svg {
-  width: 16px;
-  height: 16px;
+  width: 1.143rem;
+  height: 1.143rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938em) {
   #product {
-    padding: 16px;
-    gap: 16px;
+    padding: 1.143rem;
+    gap: 1.143rem;
   }
 }
