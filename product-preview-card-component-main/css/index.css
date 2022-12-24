@@ -1,0 +1,145 @@
+/* .wrap */
+.wrap {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 800px;
+  height: 100%;
+  padding: 32px 16px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .wrap {
+    height: initial;
+    min-width: 375px;
+    min-height: 100vh;
+  }
+}
+
+.container {
+  flex: 1 1 0;
+  max-width: 700px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* header */
+#header {
+  flex: 1 1 50%;
+}
+
+#header img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  #header {
+    flex-basis: 220px;
+  }
+
+  #header img {
+    /* height: 250px; */
+  }
+}
+
+#main {
+  flex: 1 1 50%;
+}
+
+@media (max-width: 767px) {
+  #main {
+    flex-basis: 0;
+  }
+}
+
+/* product */
+#product {
+  height: 100%;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#product h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#product .product__category {
+  order: -1;
+  color: #6f6f72;
+  letter-spacing: 0.5em;
+}
+
+#product .product__description {
+  color: #6f6f72;
+  letter-spacing: 0.05em;
+  line-height: 150%;
+}
+
+#product .product__price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#product .product__price-cost {
+  color: #6f6f72;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+#product .product__price-sale {
+  color: #3d8168;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+#product .button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  min-height: 48px;
+  border-radius: 10px;
+  background-color: #3d8168;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#product .button:hover {
+  background-color: #1b3f31;
+}
+
+#product .button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 767px) {
+  #product {
+    padding: 16px;
+    gap: 16px;
+  }
+}
