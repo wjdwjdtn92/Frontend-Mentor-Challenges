@@ -75,18 +75,19 @@
 }
 
 #product h2 {
+  color: var(--very-dark-blue);
   font-size: 36px;
   font-weight: 700;
 }
 
 #product .product__category {
   order: -1;
-  color: #6f6f72;
+  color: var(--dark-grayish-blue);
   letter-spacing: 0.5em;
 }
 
 #product .product__description {
-  color: #6f6f72;
+  color: var(--dark-grayish-blue);
   letter-spacing: 0.05em;
   line-height: 150%;
 }
@@ -98,24 +99,24 @@
 }
 
 #product .product__price-cost {
-  color: #6f6f72;
+  color: var(--dark-grayish-blue);
   text-decoration: line-through;
   font-size: 14px;
 }
 
 #product .product__price-sale {
-  color: #3d8168;
+  color: var(--dark-cyan);
   font-size: 36px;
   font-weight: 700;
 }
 
 #product .button {
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   font-size: 16px;
   min-height: 48px;
   border-radius: 10px;
-  background-color: #3d8168;
+  background-color: var(--dark-cyan);
   text-align: center;
 
   display: flex;
@@ -125,7 +126,7 @@
 }
 
 #product .button:hover {
-  background-color: #1b3f31;
+  background-color: var(--very-dark-cyan);
 }
 
 #product .button svg {
