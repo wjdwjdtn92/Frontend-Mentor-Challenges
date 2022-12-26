@@ -1,0 +1,147 @@
+/* .wrap */
+.wrap {
+  max-width: 102.857rem;
+  width: 100%;
+  min-height: 57.143rem;
+  height: 100%;
+  padding: 2.286rem 1.143rem;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 47.938em) {
+  .wrap {
+    height: initial;
+    min-width: 26.786rem;
+    min-height: 100vh;
+  }
+}
+
+.container {
+  flex: 1 1 0;
+  max-width: 50rem;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media (max-width: 47.938em) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* header */
+#header {
+  flex: 1 1 50%;
+}
+
+#header img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+@media (max-width: 47.938em) {
+  #header {
+    flex-basis: 17.857rem;
+  }
+}
+
+#main {
+  flex: 1 1 50%;
+}
+
+@media (max-width: 47.938em) {
+  #main {
+    flex-basis: 0;
+  }
+}
+
+/* product */
+#product {
+  height: 100%;
+  padding: 2.286rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.286rem;
+}
+
+#product h2 {
+  color: var(--very-dark-blue);
+  font-size: 3.429rem;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+
+#product .product__category {
+  order: -1;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 0.5em;
+}
+
+#product .product__description {
+  color: var(--dark-grayish-blue);
+  letter-spacing: 0.1em;
+  line-height: 150%;
+}
+
+#product .product__price {
+  display: flex;
+  align-items: center;
+  gap: 1.143rem;
+}
+
+#product .product__price-cost {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+#product .product__price-sale {
+  color: var(--dark-cyan);
+  font-size: 2.571rem;
+  font-weight: 700;
+}
+
+#product .button {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.143rem;
+  min-height: 3.429rem;
+  border-radius: 0.714rem;
+  background-color: var(--dark-cyan);
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.571rem;
+}
+
+#product .button:hover {
+  background-color: var(--very-dark-cyan);
+}
+
+#product .button svg {
+  width: 1.143rem;
+  height: 1.143rem;
+}
+
+@media (max-width: 47.938em) {
+  #product h2 {
+    font-size: 2.286rem;
+  }
+
+  #product {
+    padding: 1.143rem;
+    gap: 1.143rem;
+  }
+}
