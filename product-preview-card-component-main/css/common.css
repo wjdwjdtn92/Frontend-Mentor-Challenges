@@ -13,6 +13,10 @@ body {
   font-weight: 500;
 }
 
+body {
+  background-color: var(--cream);
+}
+
 p,
 h1,
 h2,
