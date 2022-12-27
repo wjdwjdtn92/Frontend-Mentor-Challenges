@@ -2,27 +2,28 @@
 .wrap {
   max-width: 102.857rem;
   width: 100%;
-
-  padding: 2.286rem 1.143rem;
-  margin: 0 auto;
-
   min-height: 100vh;
+  margin: 0 auto;
+  padding: 2.286rem 1.143rem;
+
   display: grid;
   place-content: center;
 }
 
 @media (max-width: 47.938em) {
   .wrap {
-    height: initial;
     min-width: 26.786rem;
-    min-height: 100vh;
   }
 }
 
 .container {
   flex: 1 1 0;
   max-width: 50rem;
+  max-height: 37.5rem;
   height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--white);
 
   display: flex;
   justify-content: center;
