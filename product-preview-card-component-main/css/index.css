@@ -2,14 +2,13 @@
 .wrap {
   max-width: 102.857rem;
   width: 100%;
-  min-height: 57.143rem;
-  height: 100%;
+
   padding: 2.286rem 1.143rem;
   margin: 0 auto;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 @media (max-width: 47.938em) {
