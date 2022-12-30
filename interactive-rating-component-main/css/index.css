@@ -163,6 +163,9 @@
 
   #rating .rating__title {
     font-size: 1.8rem;
+  }
+
+  #rating #rating__container .rating__title {
     margin-bottom: -1.8rem;
   }
 
