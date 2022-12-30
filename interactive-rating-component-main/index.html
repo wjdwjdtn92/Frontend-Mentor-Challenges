@@ -32,7 +32,7 @@
       <main id="main">
         <section id="rating">
           <h2 class="screen-reader-text">Interactive rating</h2>
-          <div id="rating-selecd-form" class="card">
+          <div id="rating__container" class="card">
             <div class="star-container">
               <svg
                 viewBox="0 0 17 17"
@@ -80,13 +80,11 @@
           <!-- Rating state end -->
 
           <!-- Thank you state start -->
-          <div id="rating-selecd-result" class="display-none">
+          <div id="rating__result-container" class="display-none">
             <div class="rating__result-header">
               <img src="./images/illustration-thank-you.svg" />
               <div class="rating__result-header-title">
-                You selected
-                <!-- Add rating here -->
-                4 out of 5
+                You selected 4 out of 5
               </div>
             </div>
             <div class="rating__title">Thank you!</div>
@@ -109,4 +107,5 @@
       </footer>
     </div>
   </body>
+  <script type="module" src="./script/index.js"></script>
 </html>

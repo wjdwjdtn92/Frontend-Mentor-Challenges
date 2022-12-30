@@ -92,6 +92,7 @@
   align-items: center;
 }
 
+/* An invalid form control with name='rates' is not focusable. */
 #rating .rating-form__radio input[type="radio"] {
   display: none;
 }
