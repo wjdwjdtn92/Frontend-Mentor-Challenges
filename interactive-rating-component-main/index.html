@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!--style-->
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Rating state start -->
+      <main id="main">
+        <section id="rating">
+          <h2 class="screen-reader-text">Interactive rating</h2>
+          <div id="rating__container" class="card">
+            <div class="star-container">
+              <svg
+                viewBox="0 0 17 17"
+                width="17"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+
+            <form class="rating-form">
+              <div class="rating__title">How did we do?</div>
+
+              <p class="rating__text">
+                Please let us know how we did with your support request. All
+                feedback is appreciated to help us improve our offering!
+              </p>
+
+              <fieldset class="rating-form__radio">
+                <input type="radio" id="radio1" name="rates" value="1" />
+                <label for="radio1">1</label>
+                <input type="radio" id="radio2" name="rates" value="2" />
+                <label for="radio2">2</label>
+                <input type="radio" id="radio3" name="rates" value="3" />
+                <label for="radio3">3</label>
+                <input type="radio" id="radio4" name="rates" value="4" />
+                <label for="radio4">4</label>
+                <input type="radio" id="radio5" name="rates" value="5" />
+                <label for="radio5">5</label>
+              </fieldset>
+
+              <button
+                class="rating-form__button"
+                type="submit"
+                aria-label="submit button"
+              >
+                submit
+              </button>
+            </form>
+          </div>
+          <!-- Rating state end -->
+
+          <!-- Thank you state start -->
+          <div id="rating__result-container" class="display-none">
+            <div class="rating__result-header">
+              <img src="./images/illustration-thank-you.svg" />
+              <div class="rating__result-header-title">
+                You selected 4 out of 5
+              </div>
+            </div>
+            <div class="rating__title">Thank you!</div>
+
+            <p class="rating__text center">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </section>
+        <!-- Thank you state end -->
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="module" src="./script/index.js"></script>
+</html>
