@@ -105,7 +105,7 @@
   justify-content: center;
   align-items: center;
   background-color: hsla(var(--color-light-grey), 0.1);
-  opacity: 0.5;
+  color: hsl(var(--color-light-grey));
   border-radius: 50%;
 }
 
@@ -165,5 +165,5 @@
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(var(--color-orange));
 }
