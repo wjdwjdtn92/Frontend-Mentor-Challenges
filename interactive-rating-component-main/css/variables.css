@@ -1,0 +1,8 @@
+:root {
+  /* color is hsl */
+  --color-orange: 25, 97%, 53%;
+  --color-light-grey: 217, 12%, 63%;
+  --color-medium-grey: 216, 12%, 54%;
+  --color-dark-blue: 213, 19%, 18%;
+  --color-very-dark-blue: 216, 12%, 8%;
+}
