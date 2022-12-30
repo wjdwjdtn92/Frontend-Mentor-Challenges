@@ -114,12 +114,14 @@
   background-image: none;
   opacity: 1;
   background-color: hsl(var(--color-orange));
+  color: white;
 }
 
 #rating .rating-form__radio input[type="radio"]:checked + label {
   background-image: none;
   opacity: 1;
   background-color: hsl(var(--color-light-grey));
+  color: white;
 }
 
 #rating .rating-form__button {
