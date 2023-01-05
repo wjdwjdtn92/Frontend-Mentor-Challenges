@@ -1,6 +1,6 @@
-import Accordion from "./src/component/Accordion.js";
-import Footer from "./src/component/Footer.js";
-import Main from "./src/component/Main.js";
+import Accordion from "./components/Accordion.js";
+import Footer from "./components/Footer.js";
+import Main from "./components/Main.js";
 
 const DUMY_DATA = [
   {
