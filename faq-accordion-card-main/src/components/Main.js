@@ -5,17 +5,23 @@ function Main({ $target, initialState }) {
   this.state = initialState;
 
   const $main = document.createElement("main");
+  $main.classList = "main";
+
+  const $article = document.createElement("article");
+  $article.classList = "faq";
+
+  $main.appendChild($article);
   $target.appendChild($main);
 
   this.render = () => {
-    $main.innerHTML = `<h2>${this.state.title}</h2>`;
+    $article.innerHTML = `<h2>${this.state.title}</h2>`;
 
     const illustrationImg = new IllustrationImg({
-      $target: $main,
+      $target: $article,
     });
 
     const accordion = new Accordion({
-      $target: $main,
+      $target: $article,
       initialState: this.state.data,
     });
   };

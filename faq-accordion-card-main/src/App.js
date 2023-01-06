@@ -1,4 +1,3 @@
-import Accordion from "./components/Accordion.js";
 import Footer from "./components/Footer.js";
 import Main from "./components/Main.js";
 
@@ -41,6 +40,5 @@ export default function App({ $target }) {
 
   const footer = new Footer({
     $target,
-    initialState: "Steve Jung",
   });
 }

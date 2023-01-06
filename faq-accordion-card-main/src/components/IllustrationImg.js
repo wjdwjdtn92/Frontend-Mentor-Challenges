@@ -1,5 +1,6 @@
 function IllustrationImg({ $target }) {
   const $picture = document.createElement("picture");
+  $picture.classList = "main-image";
   $target.appendChild($picture);
 
   this.render = () => {
