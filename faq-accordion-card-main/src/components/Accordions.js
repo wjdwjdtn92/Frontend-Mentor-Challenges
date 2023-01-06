@@ -1,4 +1,4 @@
-function Accordion({ $target, initialState }) {
+function Accordions({ $target, initialState }) {
   this.state = initialState;
   const $div = document.createElement("div");
   $div.classList = "accordions";
@@ -19,4 +19,4 @@ function Accordion({ $target, initialState }) {
   this.render();
 }
 
-export default Accordion;
+export default Accordions;

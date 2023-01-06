@@ -1,4 +1,4 @@
-import Accordion from "./Accordion.js";
+import Accordions from "./Accordions.js";
 import IllustrationImg from "./IllustrationImg.js";
 
 function Main({ $target, initialState }) {
@@ -20,7 +20,7 @@ function Main({ $target, initialState }) {
       $target: $article,
     });
 
-    const accordion = new Accordion({
+    const accordions = new Accordions({
       $target: $article,
       initialState: this.state.data,
     });
