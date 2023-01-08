@@ -35,6 +35,23 @@ function Main({ $target }) {
   $target.appendChild($main);
 
   this.render = () => {
+    $main.innerHTML = `
+    <section class="main-header">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/illustration-woman-online-mobile.svg"
+        />
+        <img
+          src="./images/illustration-woman-online-desktop.svg"
+          alt="illustration woman image"
+          class = "main-header__img"
+        />
+      </picture>
+      <div class="main-header__bg" />
+    </section>
+    `;
+
     const accordions = new Faq({
       $target: $main,
       initialState: DUMY_DATA,

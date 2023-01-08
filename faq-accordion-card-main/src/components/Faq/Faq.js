@@ -2,16 +2,18 @@ import Accordions from "../Accordions/Accordions.js";
 
 function Faq({ $target, initialState }) {
   this.state = initialState;
-  const $article = document.createElement("article");
+  const $section = document.createElement("section");
 
-  $article.classList = "faq";
-  $target.appendChild($article);
+  $section.classList = "faq";
+  $target.appendChild($section);
 
   this.render = () => {
-    $article.innerHTML = `<h2 class="faq__title">FAQ</h2>`;
+    $section.innerHTML = `
+    <h2 class="faq__title">FAQ</h2>
+    `;
 
     const accordions = new Accordions({
-      $target: $article,
+      $target: $section,
       initialState: this.state,
     });
   };
