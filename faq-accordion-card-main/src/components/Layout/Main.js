@@ -36,22 +36,20 @@ function Main({ $target }) {
 
   this.render = () => {
     $main.innerHTML = `
-    <section class="main-header">
-      <picture>
-        <source
-          media="(max-width: 767px)"
-          srcset="./images/illustration-woman-online-mobile.svg"
-        />
-        <img
-          src="./images/illustration-woman-online-desktop.svg"
-          alt="illustration woman image"
-          class = "main-header__img"
-        />
-      </picture>
-      <div class="main-header__bg" />
-    </section>
+    <picture>
+      <source
+        media="(max-width: 1024px)"
+        srcset="./images/illustration-woman-online-mobile.svg"
+      />
+      <img
+        src="./images/illustration-woman-online-desktop.svg"
+        alt="illustration woman image"
+        class = "main-header__img"
+      />
+    </picture>
+    <div class="desktop-block"></div>
     `;
-
+    // <div class="main-header__bg" />;
     const accordions = new Faq({
       $target: $main,
       initialState: DUMY_DATA,

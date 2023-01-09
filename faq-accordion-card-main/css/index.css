@@ -66,13 +66,16 @@ button {
   word-wrap: normal !important;
 }
 
+.desktop-block {
+  display: none;
+}
+
 #app {
   display: flex;
   place-content: center;
   align-items: center;
   min-height: 100%;
-
-  padding: 40px 24px;
+  padding: 120px 24px 24px 24px;
   margin: 0 auto;
   background: linear-gradient(to bottom, hsl(var(--soft-violet)), hsl(var(--soft-blue)));
 }
@@ -93,48 +96,42 @@ button {
   align-items: center;
 }
 
-
 .main {
+  overflow: hidden;
   display: flex;
   place-content: center;
   align-items: center;
   flex-direction: column;
 
   width: 100%;
+  height: 100%;
   min-width: calc(375px - 24px - 24px);
+  max-width: calc(768px - 120px - 120px);
   min-height: 532px;
   border-radius: 12px;
   background-color: #fff;
   padding: 24px;
 
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 240px 104px;
+  background-position: top;
+
   position: relative;
 }
 
-.main-header {
+.main picture {
+  /* display: flex; */
   position: absolute;
-  top: 0;
-}
-
-.main-header picture {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   top: -110px;
-}
-
-.main-header__bg {
-  width: 240px;
-  height: 104px;
-  background-image: url("../images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* justify-self: center; */
 }
 
 .main-header__img {
   height: 180px;
   width: 240px;
-  position: absolute;
-  margin-bottom: -100px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .faq {
@@ -204,4 +201,55 @@ button {
 
 .attribution a {
   color: #fff;
+}
+
+@media (min-width: 1024px) {
+  #app {
+    padding: 40px 150px;
+  }
+  
+  .main {
+    padding: 40px;
+    flex-direction: initial;
+    align-items: center;
+    max-width: 920px;
+    background-position: -80px;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }
+
+  .desktop-block {
+    display: block;
+    flex: 1 1 50%
+  }
+
+  .main picture {
+    position: absolute;
+    top: initial;
+    left: -80px
+  }
+
+  .main-header__img {
+    /* position: absolute; */
+    width: 500px;
+    height: 380px;
+  }
+
+  .main picture::before {
+    position: fixed;
+    top: 45%;
+    left: 30px;
+
+    content: "";
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 191px 184px;
+    width: 100%; 
+    height: 100%;
+  }
+
+  .faq {
+    flex: 1 1 50%;
+  }
 }
