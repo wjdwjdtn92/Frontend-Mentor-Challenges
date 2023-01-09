@@ -97,7 +97,6 @@ button {
 }
 
 .main {
-  overflow: hidden;
   display: flex;
   place-content: center;
   align-items: center;
@@ -209,6 +208,7 @@ button {
   }
   
   .main {
+    overflow: hidden;
     padding: 40px;
     flex-direction: initial;
     align-items: center;
