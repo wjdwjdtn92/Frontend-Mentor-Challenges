@@ -75,7 +75,7 @@ button {
   place-content: center;
   align-items: center;
   min-height: 100%;
-  padding: 120px 24px 24px 24px;
+  padding: 10rem 2rem 2rem 2rem;
   margin: 0 auto;
   background: linear-gradient(to bottom, hsl(var(--soft-violet)), hsl(var(--soft-blue)));
 }
@@ -85,7 +85,7 @@ button {
   flex-direction: column;
   place-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 0.5rem;
   width: 100%;
 }
 
@@ -104,16 +104,16 @@ button {
 
   width: 100%;
   height: 100%;
-  min-width: calc(375px - 24px - 24px);
-  max-width: calc(768px - 120px - 120px);
-  min-height: 532px;
-  border-radius: 12px;
+  min-width: calc(31.25rem - 2rem - 2rem);
+  max-width: calc(64rem - 10rem - 10rem);
+  min-height: 44.5rem;
+  border-radius: 1rem;
   background-color: #fff;
-  padding: 24px;
+  padding: 2rem;
 
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 240px 104px;
+  background-size: 20rem 6.5rem;
   background-position: top;
 
   position: relative;
@@ -122,13 +122,13 @@ button {
 .main picture {
   /* display: flex; */
   position: absolute;
-  top: -110px;
+  top: -6.875rem;
   /* justify-self: center; */
 }
 
 .main-header__img {
-  height: 180px;
-  width: 240px;
+  height: 11.25rem;
+  width: 15rem;
   object-fit: cover;
   object-position: center;
 }
@@ -188,13 +188,13 @@ button {
 }
 
 .accordions details p {
-  padding: 18px 0 0 0;
+  padding: 1.5rem 0 0 0;
   color: hsl(var(--dark-grayish-blue));
 }
 
 /* footer */
 .attribution {
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -202,21 +202,41 @@ button {
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   #app {
-    padding: 40px 150px;
+    padding: 3.5rem 12.5rem;
   }
   
+  .wrapper {
+    max-width: 64rem;
+    position: relative;
+  }
+
+  .wrapper::before {
+    position: absolute;
+    z-index: 99;
+    top: 21.25rem;
+    left: -4rem;
+
+    content: "";
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 12rem 11.5rem;
+    width: 100%; 
+    height: 100%;
+  }
+
   .main {
-    overflow: hidden;
-    padding: 40px;
+    padding: 3.5rem;
     flex-direction: initial;
     align-items: center;
-    max-width: 920px;
-    background-position: -80px;
+    max-width: 57rem;
+    background-position: -5rem;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 31.25rem;
+    overflow: hidden;
+    position:relative;
   }
 
   .desktop-block {
@@ -225,28 +245,14 @@ button {
   }
 
   .main picture {
-    position: absolute;
     top: initial;
-    left: -80px
+    left: -5rem;
   }
 
   .main-header__img {
-    /* position: absolute; */
-    width: 500px;
-    height: 380px;
-  }
-
-  .main picture::before {
-    position: fixed;
-    top: 45%;
-    left: 30px;
-
-    content: "";
-    background-image: url("../images/illustration-box-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 191px 184px;
-    width: 100%; 
-    height: 100%;
+    width: 31.25rem;
+    height: 23.75rem;
+    left: -5rem;
   }
 
   .faq {
