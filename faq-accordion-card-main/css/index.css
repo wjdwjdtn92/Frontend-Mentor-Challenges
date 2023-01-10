@@ -1,0 +1,261 @@
+/* variable */
+:root {
+  --very-dark-desaturated-blue: 238, 29%, 16%;
+  --soft-red: 14, 88%, 65%;
+  --soft-violet: 273, 75%, 66%;
+  --soft-blue: 240, 73%, 65%;
+  --very-dark-grayish-blue: 237, 12%, 33%;
+  --dark-grayish-blue: 240, 6%, 50%;
+  --light-grayish-blue: 240, 5%, 91%;
+}
+
+
+/* reset css */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;  
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  font-weight: 400;
+  min-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 스크린 리더를 위한 클래스 */
+/* https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/ */
+.screen-reader-text {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  word-wrap: normal !important;
+}
+
+.desktop-block {
+  display: none;
+}
+
+#app {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 10rem 2rem 2rem 2rem;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, hsl(var(--soft-violet)), hsl(var(--soft-blue)));
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+  min-width: calc(31.25rem - 2rem - 2rem);
+  max-width: calc(64rem - 10rem - 10rem);
+  min-height: 44.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 20rem 6.5rem;
+  background-position: top;
+
+  position: relative;
+}
+
+.main picture {
+  /* display: flex; */
+  position: absolute;
+  top: -6.875rem;
+  /* justify-self: center; */
+}
+
+.main-header__img {
+  height: 11.25rem;
+  width: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.faq__title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* accordions */
+.accordions {
+  width: 100%;
+}
+
+.accordions details {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(var(--light-grayish-blue));
+}
+
+.accordions details > summary {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  color: hsl(var(--very-dark-grayish-blue));
+  cursor: pointer;
+}
+
+.accordions details[open] > summary {
+  font-weight: 700;
+  color: hsl(var(--very-dark-desaturated-blue));
+}
+
+.accordions summary::-webkit-details-marker {
+  display: none
+}
+
+.accordions summary::after {
+  content: url("../images/icon-arrow-down.svg");
+  position: absolute;
+  right: 0;
+}
+
+.accordions details[open] summary:after {
+  transform: rotate(180deg);
+}
+
+.accordions details p {
+  padding: 1.5rem 0 0 0;
+  color: hsl(var(--dark-grayish-blue));
+}
+
+/* footer */
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+@media (min-width: 64.063em) {
+  #app {
+    padding: 3.5rem 12.5rem;
+  }
+  
+  .wrapper {
+    max-width: 64rem;
+    position: relative;
+  }
+
+  .wrapper::before {
+    position: absolute;
+    z-index: 99;
+    top: 21.25rem;
+    left: -4rem;
+
+    content: "";
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 12rem 11.5rem;
+    width: 100%; 
+    height: 100%;
+  }
+
+  .main {
+    padding: 3.5rem;
+    flex-direction: initial;
+    align-items: center;
+    max-width: 57rem;
+    background-position: -5rem;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 31.25rem;
+    overflow: hidden;
+    position:relative;
+  }
+
+  .desktop-block {
+    display: block;
+    flex: 1 1 50%
+  }
+
+  .main picture {
+    top: initial;
+    left: -5rem;
+  }
+
+  .main-header__img {
+    width: 31.25rem;
+    height: 23.75rem;
+    left: -5rem;
+  }
+
+  .faq {
+    flex: 1 1 50%;
+  }
+}
