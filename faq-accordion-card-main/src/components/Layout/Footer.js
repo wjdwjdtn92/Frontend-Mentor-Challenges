@@ -11,7 +11,7 @@ function Footer({ $target }) {
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" alt="Frontend Mentor link">
           Frontend Mentor
         </a>
-        . Coded by <a href="https://github.com/wjdwjdtn92">Steve Jung</a>.
+        . Coded by <a href="https://github.com/wjdwjdtn92" alt="">Steve Jung</a>.
       </div>`;
   };
 
