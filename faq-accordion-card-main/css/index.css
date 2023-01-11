@@ -208,7 +208,7 @@ button {
   }
   
   .wrapper {
-    max-width: 90.25rem;
+    max-width: 76.5rem;
     position: relative;
   }
 
@@ -230,7 +230,7 @@ button {
     padding: 3.5rem;
     flex-direction: initial;
     align-items: center;
-    max-width: 87.5rem;
+    max-width: 74rem;
     background-position: -5rem;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
