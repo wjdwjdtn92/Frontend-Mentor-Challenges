@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 html, body {
@@ -113,7 +113,7 @@ button {
 
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 20rem 6.5rem;
+  background-size: 20rem 9rem;
   background-position: top;
 
   position: relative;
@@ -122,11 +122,12 @@ button {
 .main picture {
   position: absolute;
   top: -6.875rem;
+  /* justify-self: center; */
 }
 
 .main-header__img {
-  height: 11.25rem;
-  width: 15rem;
+  height: 15rem;
+  width: 20rem;
   object-fit: cover;
   object-position: center;
 }
@@ -140,7 +141,7 @@ button {
 }
 
 .faq__title{
-  font-size: 30px;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
@@ -151,7 +152,7 @@ button {
 
 .accordions details {
   position: relative;
-  padding: 20px 0;
+  padding: 1.75rem 0;
   border-bottom: 1px solid hsl(var(--light-grayish-blue));
 }
 
@@ -210,29 +211,29 @@ button {
   }
   
   .wrapper {
-    max-width: 64rem;
+    max-width: 90.25rem;
     position: relative;
   }
 
   .wrapper::before {
     position: absolute;
     z-index: 99;
-    top: 21.25rem;
-    left: -4rem;
+    top: 20rem;
+    left: -6rem;
 
     content: "";
     background-image: url("../images/illustration-box-desktop.svg");
     background-repeat: no-repeat;
     background-size: 12rem 11.5rem;
-    width: 100%; 
-    height: 100%;
+    width: 10rem;
+    height: 7rem
   }
 
   .main {
     padding: 3.5rem;
     flex-direction: initial;
     align-items: center;
-    max-width: 57rem;
+    max-width: 87.5rem;
     background-position: -5rem;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
@@ -252,8 +253,8 @@ button {
   }
 
   .main-header__img {
-    width: 31.25rem;
-    height: 23.75rem;
+    width: 34rem;
+    height: 26rem;
     left: -5rem;
   }
 
