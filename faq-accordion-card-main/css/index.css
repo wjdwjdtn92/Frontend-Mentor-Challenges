@@ -173,6 +173,10 @@ button {
   color: hsl(var(--very-dark-desaturated-blue));
 }
 
+.accordions details:hover:not([open]) > summary {
+  color: hsl(var(--soft-red));
+}
+
 .accordions summary::-webkit-details-marker {
   display: none
 }
