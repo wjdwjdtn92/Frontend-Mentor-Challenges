@@ -191,8 +191,12 @@ button {
 }
 
 /* footer */
+.footer {
+   min-width: 23.5rem;
+}
+
 .attribution {
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-align: center;
 }
 
